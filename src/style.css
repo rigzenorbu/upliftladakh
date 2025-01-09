@@ -1,0 +1,74 @@
+/* Reset for the body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header container styles */
+#main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fb4534; /* Light red background */
+    color: white;
+    padding: 10px;
+}
+
+/* Title styles */
+.header-title {
+    flex: 1;
+    text-align: center;
+    margin: 0;
+    font-size: 34px; /* Adjust font size if needed */
+}
+
+/* Logo container styles */
+#logo-container {
+    text-align: right;
+}
+
+/* Logo image styles */
+.logo-img {
+    height: 70px; /* Fix the height to fit within the header */
+    width: 70px; /* Fix the width to maintain aspect ratio */
+    border-radius: 60%; /* Make the image circular */
+    object-fit: cover; /* Ensure the image fits within the circle */
+    border: 3px solid white; /* Optional: Add a white border around the logo */
+}
+
+
+/* Navigation bar styles */
+.navbar {
+    background-color: #5179f0; /* Slightly darker red */
+    padding: 10px 0;
+    text-align: center;
+}
+
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Spacing between links */
+}
+
+.nav-item {
+    display: inline-block;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 5px 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-link:hover {
+    background-color: white;
+    color: #121010;
+    border-radius: 5px;
+}
