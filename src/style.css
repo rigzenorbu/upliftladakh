@@ -72,3 +72,262 @@ body {
     color: #121010;
     border-radius: 5px;
 }
+
+/* About Section */
+.about {
+    padding: 20px;
+    background-color: #f28b82;
+    color: white;
+    text-align: center;
+}
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-image {
+    flex: 1;
+    max-width: 200px;
+}
+
+.founder-photo {
+    width: 100%;
+    height: 100%;
+    border-radius: 80%;
+    object-fit: cover;
+    border: 0px solid rgba(205, 21, 21, 0.932);
+}
+
+.about-text {
+    flex: 2;
+    max-width: 600px;
+    text-align: left;
+}
+
+.about-text ul {
+    padding-left: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+h1, h2, h3 {
+    color: #2c3e50;
+}
+
+a {
+    text-decoration: none;
+    color: #3498db;
+}
+
+a.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 5px;
+    background: #3498db;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+a.btn:hover {
+    background: #2980b9;
+}
+
+/* Hero Section */
+.hero {
+    background: url('hero-background.jpg') no-repeat center center/cover;
+    text-align: center;
+    padding: 80px 20px;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.hero-buttons .btn {
+    font-size: 1.2rem;
+}
+
+/* Introduction Section */
+.introduction {
+    text-align: center;
+    padding: 40px 20px;
+    background: #ffffff;
+    border-top: 4px solid #3498db;
+}
+
+.introduction .highlights {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.highlight {
+    background: #ecf0f1;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 15px 20px;
+    width: 200px;
+    text-align: center;
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+    padding: 40px 20px;
+    background: #f8f9fa;
+}
+
+.why-choose-us .features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.feature {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+}
+
+.feature h3 {
+    color: #2980b9;
+    margin-bottom: 10px;
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 40px 20px;
+    background: #ffffff;
+    text-align: center;
+}
+
+.testimonials p {
+    font-style: italic;
+    color: #7f8c8d;
+}
+
+/* Events Section */
+.events {
+    padding: 40px 20px;
+    text-align: center;
+    background: #ecf0f1;
+}
+
+.events .btn {
+    margin-top: 20px;
+}
+
+/* Get Involved Section */
+.get-involved {
+    padding: 40px 20px;
+    background: #ffffff;
+    text-align: center;
+}
+
+.get-involved-links .btn {
+    margin: 10px 5px;
+}
+
+/* Contact Section */
+.contact {
+    padding: 40px 20px;
+    background: #f8f9fa;
+    text-align: center;
+}
+
+.contact-form {
+    margin: 20px auto;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.contact-form button {
+    background: #3498db;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.contact-form button:hover {
+    background: #2980b9;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    background: #2c3e50;
+    color: #fff;
+    text-align: center;
+}
+
+.footer-links a {
+    margin: 0 10px;
+    color: #ecf0f1;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #3498db;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .highlight, .feature {
+        width: 100%;
+    }
+}

@@ -6,29 +6,156 @@
     <title>Mission Uplift Ladakh</title>
     <!-- Link to external CSS file -->
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script> <!-- Add this for JavaScript -->
 </head>
 <body>
     <!-- Header Section -->
     <div class="header" id="main-header">
         <!-- Placeholder for the logo on the right -->
         <div class="logo" id="logo-container">
-            <img src="images/logo.png" alt="Logo" class="logo-img"> <!-- Replace 'logo.png' with your logo's path -->
+            <img src="images/logo.png" alt="Logo" class="logo-img">
         </div>
 
         <!-- Title in the middle -->
         <h1 class="header-title">Mission Uplift Ladakh</h1>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="main-navbar">
+        <ul class="nav-list">
+            <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#about" class="nav-link" onclick="showAbout()">About</a></li> <!-- Call JavaScript -->
+            <li class="nav-item"><a href="#scholarship" class="nav-link">Scholarship</a></li>
+            <li class="nav-item"><a href="#events" class="nav-link">Events</a></li>
+            <li class="nav-item"><a href="#gallery" class="nav-link">Gallery</a></li>
+            <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about-section" class="about hidden">
+        <div class="about-container">
+            <div class="about-image">
+                <img src="images/gaphel.jpg" alt="Tsering Gaphel" class="founder-photo">
+            </div>
+            <div class="about-text">
+                <h2>About the Founder</h2>
+                <p><strong>Tsering Gaphel</strong>, the visionary behind <strong>Mission Uplift Ladakh</strong>, is pursuing his Master's in Structural Engineering at the prestigious <strong>Indian Institute of Technology (IIT) Delhi</strong>.</p>
+                <p>Hailing from the serene valley of <strong>Nubra, Ladakh</strong>, he is deeply committed to empowering the youth of Ladakh by providing:</p>
+                <ul>
+                    <li>Timely updates on scholarships and grants</li>
+                    <li>Career guidance and mentorship</li>
+                    <li>Workshops, events, and skill development opportunities</li>
+                    <li>A platform to unite Ladakhi students and foster collaboration</li>
+                </ul>
+                <p>Through this initiative, Tsering Gaphel envisions a <strong>future-ready Ladakh</strong>, where students can achieve their aspirations with confidence and support.</p>
+            </div>
         </div>
+    </section>
 
-        <nav class="navbar" id="main-navbar">
-            <ul class="nav-list">
-                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="#Scholoarship" class="nav-link">Scholoarship</a></li>
-                <li class="nav-item"><a href="#events" class="nav-link">Events</a></li>
-                <li class="nav-item"><a href="#gallery" class="nav-link">Gallery</a></li>
-                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-        </nav>
+     <!-- Hero Section -->
+     <section class="hero">
+        <h1 class="hero-title">Empowering the Youth of Ladakh for a Brighter Tomorrow</h1>
+        <p class="hero-subtitle">Unlock Opportunities, Build Careers, and Stay Informed.</p>
+        <div class="hero-buttons">
+            <a href="#scholarships" class="btn">Explore Scholarships</a>
+            <a href="#community" class="btn">Join Our Community</a>
+        </div>
+    </section>
 
+    <!-- Introduction Section -->
+    <section class="introduction" id="home">
+        <h2>Welcome to Mission Uplift Ladakh</h2>
+        <p>
+            Mission Uplift Ladakh is a platform dedicated to guiding the youth of Ladakh in building successful careers. Whether you're searching for scholarships, career advice, or opportunities to enhance your skills, we are here to support you every step of the way.
+        </p>
+        <div class="highlights">
+            <div class="highlight">Regular updates on scholarships</div>
+            <div class="highlight">Career guidance and mentorship</div>
+            <div class="highlight">Skill-building events and workshops</div>
+            <div class="highlight">A platform to unite Ladakhi students</div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us">
+        <h2>Why Mission Uplift Ladakh?</h2>
+        <p>
+            We understand the unique challenges faced by the youth of Ladakh. Our platform is built to ensure no opportunity goes unnoticed, and every student has access to the resources they need to succeed.
+        </p>
+        <div class="features">
+            <div class="feature">
+                <h3>Scholarship Updates</h3>
+                <p>Timely updates on financial aid opportunities.</p>
+            </div>
+            <div class="feature">
+                <h3>Career Mentorship</h3>
+                <p>Personalized advice to shape your future.</p>
+            </div>
+            <div class="feature">
+                <h3>Community Events</h3>
+                <p>Workshops, seminars, and networking events.</p>
+            </div>
+            <div class="feature">
+                <h3>Student Forum</h3>
+                <p>Connect with peers and mentors.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <h2>Hear from Our Beneficiaries</h2>
+        <p>Coming soon! Real stories of Ladakhi students achieving their dreams.</p>
+    </section>
+
+    <!-- Upcoming Events Section -->
+    <section class="events" id="events">
+        <h2>Stay Updated with Upcoming Events</h2>
+        <p>Join us for a scholarship guidance webinar on January 15th, 2025!</p>
+        <a href="#" class="btn">View All Events</a>
+    </section>
+
+    <!-- Get Involved Section -->
+    <section class="get-involved">
+        <h2>Join the Mission</h2>
+        <p>Encourage students, mentors, and supporters to get involved.</p>
+        <div class="get-involved-links">
+            <a href="#" class="btn">Volunteer with Us</a>
+            <a href="#" class="btn">Donate</a>
+            <a href="#" class="btn">Partner with Us</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2>We’re Here to Help!</h2>
+        <form action="#" method="post" class="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Submit</button>
+        </form>
+        <div class="contact-details">
+            <p>Email: info@upliftladakh.org</p>
+            <p>Email: kuri@gmail</p>
+            <p>Email: rigzen077@gmail.com</p>
+            <p>Phone: +91-9876543210</p>
+            <p>Phone: +91-9797166422</p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>© 2025 Mission Uplift Ladakh. All Rights Reserved.</p>
+        <div class="footer-links">
+            <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#about" class="nav-link" onclick="showAbout()">About</a></li> <!-- Call JavaScript -->
+            <li class="nav-item"><a href="#scholarship" class="nav-link">Scholarship</a></li>
+            <li class="nav-item"><a href="#events" class="nav-link">Events</a></li>
+            <li class="nav-item"><a href="#gallery" class="nav-link">Gallery</a></li>
+            <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </div>
+    </footer>
 </body>
 </html>
