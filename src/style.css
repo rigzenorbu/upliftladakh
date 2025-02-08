@@ -10,9 +10,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #fb4534; /* Light red background */
-    color: white;
-    padding: 10px;
+    background-color: #333; 
+    color: rgb(9, 17, 234);
+    padding: 12px;
 }
 
 /* Title styles */
@@ -20,7 +20,8 @@ body {
     flex: 1;
     text-align: center;
     margin: 0;
-    font-size: 34px; /* Adjust font size if needed */
+    font-size: 36px; /* Adjusted font size */
+    color: white;
 }
 
 /* Logo container styles */
@@ -30,18 +31,17 @@ body {
 
 /* Logo image styles */
 .logo-img {
-    height: 70px; /* Fix the height to fit within the header */
-    width: 70px; /* Fix the width to maintain aspect ratio */
-    border-radius: 60%; /* Make the image circular */
-    object-fit: cover; /* Ensure the image fits within the circle */
-    border: 3px solid white; /* Optional: Add a white border around the logo */
+    height: 75px; /* Increased height */
+    width: 75px; /* Increased width */
+    border-radius: 60%; /* Circular image */
+    object-fit: cover;
+    border: 3px solid white; /* White border around the logo */
 }
-
 
 /* Navigation bar styles */
 .navbar {
-    background-color: #5179f0; /* Slightly darker red */
-    padding: 10px 0;
+    background-color: #4c73f0; /* Slightly darker blue */
+    padding: 12px 0;
     text-align: center;
 }
 
@@ -51,7 +51,7 @@ body {
     padding: 0;
     display: flex;
     justify-content: center;
-    gap: 20px; /* Spacing between links */
+    gap: 25px; /* Increased spacing between links */
 }
 
 .nav-item {
@@ -62,21 +62,21 @@ body {
     text-decoration: none;
     color: white;
     font-weight: bold;
-    font-size: 18px;
-    padding: 5px 10px;
+    font-size: 20px;
+    padding: 6px 12px;
     transition: background-color 0.3s, color 0.3s;
 }
 
 .nav-link:hover {
     background-color: white;
     color: #121010;
-    border-radius: 5px;
+    border-radius: 6px;
 }
 
 /* About Section */
 .about {
-    padding: 20px;
-    background-color: #f28b82;
+    padding: 25px;
+    background-color: #ff6f61; /* Light coral background */
     color: white;
     text-align: center;
 }
@@ -86,12 +86,12 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 25px; /* Increased gap */
 }
 
 .about-image {
     flex: 1;
-    max-width: 200px;
+    max-width: 220px; /* Slightly larger image */
 }
 
 .founder-photo {
@@ -104,12 +104,12 @@ body {
 
 .about-text {
     flex: 2;
-    max-width: 600px;
+    max-width: 650px; /* Increased max width */
     text-align: left;
 }
 
 .about-text ul {
-    padding-left: 20px;
+    padding-left: 25px; /* Increased padding */
 }
 
 .hidden {
@@ -122,24 +122,24 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: #f4f4f9;
+    background-color: #f4f7fb; /* Very light gray background */
     color: #333;
 }
 
 h1, h2, h3 {
-    color: #2c3e50;
+    color: #34495e; /* Dark grayish blue */
 }
 
 a {
     text-decoration: none;
-    color: #3498db;
+    color: #1e88e5; /* Bright blue */
 }
 
 a.btn {
     display: inline-block;
-    padding: 10px 20px;
-    margin: 10px 5px;
-    background: #3498db;
+    padding: 12px 22px;
+    margin: 12px 6px;
+    background: #1e88e5; /* Bright blue */
     color: #fff;
     border-radius: 5px;
     font-weight: bold;
@@ -147,14 +147,14 @@ a.btn {
 }
 
 a.btn:hover {
-    background: #2980b9;
+    background: #1565c0; /* Darker blue on hover */
 }
 
 /* Hero Section */
 .hero {
     background: url('hero-background.jpg') no-repeat center center/cover;
     text-align: center;
-    padding: 80px 20px;
+    padding: 100px 20px;
     color: #fff;
     height: 100vh;
     display: flex;
@@ -164,75 +164,75 @@ a.btn:hover {
 }
 
 .hero-title {
-    font-size: 3rem;
-    margin-bottom: 20px;
+    font-size: 3.2rem; /* Increased size */
+    margin-bottom: 25px;
 }
 
 .hero-subtitle {
-    font-size: 1.5rem;
-    margin-bottom: 30px;
+    font-size: 1.6rem;
+    margin-bottom: 35px;
 }
 
 .hero-buttons .btn {
-    font-size: 1.2rem;
+    font-size: 1.3rem; /* Slightly larger font size */
 }
 
 /* Introduction Section */
 .introduction {
     text-align: center;
-    padding: 40px 20px;
+    padding: 45px 20px;
     background: #ffffff;
-    border-top: 4px solid #3498db;
+    border-top: 4px solid #1e88e5; /* Blue accent line */
 }
 
 .introduction .highlights {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 25px;
 }
 
 .highlight {
     background: #ecf0f1;
     border: 1px solid #ddd;
-    border-radius: 10px;
-    margin: 10px;
-    padding: 15px 20px;
-    width: 200px;
+    border-radius: 12px; /* Rounded corners */
+    margin: 15px;
+    padding: 18px 25px;
+    width: 220px;
     text-align: center;
 }
 
 /* Why Choose Us Section */
 .why-choose-us {
-    padding: 40px 20px;
-    background: #f8f9fa;
+    padding: 45px 20px;
+    background: #f1f2f6; /* Light grayish background */
 }
 
 .why-choose-us .features {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 25px;
 }
 
 .feature {
     background: #fff;
     border: 1px solid #ddd;
-    border-radius: 10px;
-    margin: 10px;
-    padding: 20px;
-    width: 250px;
+    border-radius: 12px;
+    margin: 15px;
+    padding: 22px;
+    width: 270px;
     text-align: center;
 }
 
 .feature h3 {
-    color: #2980b9;
-    margin-bottom: 10px;
+    color: #3498db; /* Light blue */
+    margin-bottom: 12px;
 }
 
 /* Testimonials Section */
 .testimonials {
-    padding: 40px 20px;
+    padding: 45px 20px;
     background: #ffffff;
     text-align: center;
 }
@@ -244,35 +244,98 @@ a.btn:hover {
 
 /* Events Section */
 .events {
-    padding: 40px 20px;
+    padding: 45px 20px;
     text-align: center;
     background: #ecf0f1;
 }
 
 .events .btn {
-    margin-top: 20px;
+    margin-top: 25px;
+}
+
+/* Scholarship Section */
+.scholarship {
+    padding: 45px 20px;
+    background-color: #ff6f61; /* Similar to About section */
+    text-align: center;
+}
+
+.scholarship h2 {
+    font-size: 2.7rem; /* Increased font size */
+    margin-bottom: 35px;
+}
+
+.scholarship .categories {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.scholarship .category {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 22px;
+    width: 30%;
+    margin-bottom: 25px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.scholarship .category:hover {
+    transform: translateY(-12px);
+}
+
+.scholarship .category h3 {
+    font-size: 2rem; /* Slightly larger font size */
+    margin-bottom: 18px;
+}
+
+.scholarship .category p {
+    font-size: 1.1rem;
+    margin-bottom: 22px;
+}
+
+.scholarship .category ul {
+    list-style: none;
+}
+
+.scholarship .category ul li {
+    font-size: 1.1rem;
+    margin: 6px 0;
+}
+
+@media (max-width: 768px) {
+    .scholarship .category {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .scholarship .category {
+        width: 100%;
+    }
 }
 
 /* Get Involved Section */
 .get-involved {
-    padding: 40px 20px;
+    padding: 45px 20px;
     background: #ffffff;
     text-align: center;
 }
 
 .get-involved-links .btn {
-    margin: 10px 5px;
+    margin: 12px 6px;
 }
 
 /* Contact Section */
 .contact {
-    padding: 40px 20px;
-    background: #f8f9fa;
+    padding: 45px 20px;
+    background: #f1f2f6;
     text-align: center;
 }
 
 .contact-form {
-    margin: 20px auto;
+    margin: 25px auto;
     max-width: 500px;
     display: flex;
     flex-direction: column;
@@ -280,17 +343,17 @@ a.btn:hover {
 
 .contact-form input,
 .contact-form textarea {
-    margin: 10px 0;
-    padding: 10px;
+    margin: 12px 0;
+    padding: 12px;
     border: 1px solid #ddd;
     border-radius: 5px;
     width: 100%;
 }
 
 .contact-form button {
-    background: #3498db;
+    background: #1e88e5; /* Bright blue */
     color: #fff;
-    padding: 10px;
+    padding: 12px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -299,35 +362,35 @@ a.btn:hover {
 }
 
 .contact-form button:hover {
-    background: #2980b9;
+    background: #1565c0; /* Darker blue */
 }
 
 /* Footer */
 .footer {
-    padding: 20px;
-    background: #2c3e50;
+    padding: 25px;
+    background: #34495e; /* Darker grayish blue */
     color: #fff;
     text-align: center;
 }
 
 .footer-links a {
-    margin: 0 10px;
+    margin: 0 12px;
     color: #ecf0f1;
     font-weight: bold;
     transition: color 0.3s;
 }
 
 .footer-links a:hover {
-    color: #3498db;
+    color: #1e88e5; /* Bright blue */
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
     .hero-title {
-        font-size: 2rem;
+        font-size: 2.3rem;
     }
 
-    .highlight, .feature {
+    .highlight, .feature, .scholarship .category {
         width: 100%;
     }
 }

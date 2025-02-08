@@ -1,0 +1,109 @@
+/* Resetting default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and page setup */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header styling */
+.header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.header .logo-img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.header-title {
+    font-size: 36px;
+    margin: 10px 0;
+}
+
+/* About Founder Section */
+.about-founder {
+    padding: 40px 20px;
+    background-color: #fff;
+}
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.about-image {
+    margin-right: 40px;
+}
+
+.founder-photo {
+    width: 250px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-text {
+    max-width: 600px;
+}
+
+.about-text h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.about-text ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.about-text ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Footer styling */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.footer-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
